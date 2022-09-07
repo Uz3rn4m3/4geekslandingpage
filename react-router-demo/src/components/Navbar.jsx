@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [isOpen, setOpen] = useState(false);
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <a className="navbar-brand" href="#">Navbar</a>
@@ -18,7 +17,7 @@ const Navbar = () => {
         <a className="nav-link" href="#">About</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Profile</a>
+        <a className="nav-link" href="#">Services</a>
       </li>
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

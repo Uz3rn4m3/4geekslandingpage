@@ -1,22 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
     <Navbar />
     <div className='container mt-2' style={{
       marginTop: 40}}>
-        <Switch>
-          <Route exact path='/Home'>
-        <Home />
-        </Route>
-        <Route exact path='/About'>
-        <About />
-        </Route>
-      </Switch>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
-    </BrowserRouter>
+      </div>
   );
 }
 
