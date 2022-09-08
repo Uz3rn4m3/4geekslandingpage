@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import { CardLink } from "react-router-dom";
 
-const Card = () => {
-    const [isOpen, setOpen] = useState(false);
+
+const Card = (props) => {
     return(
-        <Card style={{width: '18rem' }}>
-            <Card.img variant="top" src='holder.js/500x325' />
-            <Card.body>
-                <Card.title>Card Title</Card.title>
-                <Card.text>
-                    
-                </Card.text>
-                <button className="btn btn-primary">Find Out More</button>
-            </Card.body>
-        </Card>
-         );
+        <div  className="card text-center vh-100">
+    <img className="card-img-top" src="https://via.placeholder.com/500x325" alt="Card image" />
+    <div className="card-body">
+      <h4 className="card-title" ><strong>Card title</strong></h4>
+      <p className="card-text">{props.cardText}</p>
+      <div className="container-fluid">
+      <a href="#" className="btn btn-primary">Find Out More!</a>
+      </div>
+    </div>
+  </div>
+     );
     }
     export default Card;
