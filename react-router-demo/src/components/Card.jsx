@@ -8,9 +8,7 @@ const Card = (props) => {
     <div className="card-body">
       <h4 className="card-title" ><strong>Card title</strong></h4>
       <p className="card-text">{props.cardText}</p>
-      <div className="container-fluid">
       <a href="#" className="btn btn-primary">Find Out More!</a>
-      </div>
     </div>
   </div>
      );
